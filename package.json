@@ -1,0 +1,22 @@
+{
+  "name": "my-react-boilerplate",
+  "version": "1.0.0",
+  "description": "'npm install' 'npm start'",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minajeanne/my-react-boilerplate.git"
+  },
+  "author": "Minajeanne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minajeanne/my-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Minajeanne/my-react-boilerplate#readme"
+}
