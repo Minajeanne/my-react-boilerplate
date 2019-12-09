@@ -1,10 +1,10 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './src/index.js'
   },
   output: {
     filename: '[name].[hash].js',
@@ -14,30 +14,25 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: ['node_modules'],
+        exclude: ['/node_modules'],
         use: [{ loader: 'babel-loader' }],
       },
       {
         test: /\.s(a|c)ss$/,
-        user: [{
+        use: [{
           loader: 'style-loader'
         }, {
           loader: 'css-loader'
         }, {
           loader: 'sass-loader'
         }],
-      }
+   	  }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: 'index.html'
     }),
-    new CleanWebpackPlugin(['dist'])
-  ],
-  devServer: {
-    host: 'localhost',
-    port: 3000,
-    open: true,
-  }
+    new CleanWebpackPlugin(),
+  ]
 }
