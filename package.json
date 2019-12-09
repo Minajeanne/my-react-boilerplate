@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
     "test": "jest ./test"
   },
   "repository": {
@@ -39,7 +40,10 @@
     "react-test-renderer": "^16.12.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   },
   "jest": {
     "setupFilesAfterEnv": [
